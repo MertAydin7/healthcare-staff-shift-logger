@@ -2,7 +2,7 @@
 
 A lightweight, user-friendly web application built with Flask that enables healthcare facilities to efficiently log, track, and manage staff shift information.
 
-https://github.com//healthcare-staff-shift-logger/raw/main/screenshots/preview.mp4
+https://github.com/Mert.Aydin7/healthcare-staff-shift-logger/raw/main/screenshots/preview.mp4
 
 ## Project Description
 
