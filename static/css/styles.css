@@ -1,0 +1,99 @@
+/* Additional custom styles for Healthcare Staff Shift Logger */
+
+/* Smooth page transitions */
+body {
+    transition: background-color 0.3s ease;
+}
+
+/* Custom form styling */
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Custom card styling */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Table customization */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card-header h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Empty state styling */
+.alert-info {
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+    outline: 3px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+/* Smooth transitions for alerts */
+.alert {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Print styles for better CSV exports */
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+}
